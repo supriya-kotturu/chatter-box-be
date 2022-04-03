@@ -6,7 +6,6 @@ body {
 }
 
 #form {
-	background: rgba(0, 0, 0, 0.15);
 	padding: 0.25rem;
 	position: fixed;
 	bottom: 0;
@@ -18,23 +17,24 @@ body {
 	backdrop-filter: blur(10px);
 }
 #input {
-	border: none;
-	padding: 0 1rem;
+	border: 2px solid #6ee7b7;
+	padding: 1rem 1.5rem;
 	flex-grow: 1;
-	border-radius: 2rem;
+	border-radius: 8px;
 	margin: 0.25rem;
 }
 #input:focus {
 	outline: none;
 }
 #form > button {
-	background: #333;
+	background: #6ee7b7;
 	border: none;
 	padding: 0 1rem;
 	margin: 0.25rem;
-	border-radius: 3px;
+	border-radius: 8px;
+	height: 36px;
 	outline: none;
-	color: #fff;
+	color: #055a38;
 }
 
 #messages {
@@ -44,7 +44,19 @@ body {
 }
 #messages > li {
 	padding: 0.5rem 1rem;
+	margin: 1.5rem;
+	border-radius: 8px;
 }
 #messages > li:nth-child(odd) {
-	background: #efefef;
+	background: #6ee7b7;
+	color: #055a38;
+	width: 30vw;
+	margin-left: auto;
+	right: 0;
+}
+
+#messages > li:nth-child(even) {
+	color: #d4eee4;
+	background: #06b36d;
+	width: 30vw;
 }
